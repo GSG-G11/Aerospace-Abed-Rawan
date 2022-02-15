@@ -16,3 +16,13 @@ const fetch = (method, url, cb) => {
   xhr.open(method, url);
   xhr.send();
 };
+const handleDom = (data) => {
+  apodImg.src = data.url;
+  apodTitle.textContent = data.title;
+  apodDetail.textContent = data.explanation;
+};
+
+dateSearch.addEventListener("click", () => {
+  const url = `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${date.value}`;
+  fetch("GET", url, handleDom);
+});
