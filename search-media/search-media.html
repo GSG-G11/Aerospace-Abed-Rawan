@@ -5,31 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/search-media.css" />
+    <script defer src="../assets/js/dom.js"></script>
     <title>Aerospace | Search</title>
   </head>
   <body>
     <div class="container">
       <div class="background-image">
-        <img src="./assets/img/background-img.jpg" alt="" />
+        <img src="../assets/img/background-img.jpg" alt="" />
       </div>
 
       <div class="links">
         <a href="../index.html" class="header-btn">Back to Home</a>
-        <a href="./search-media/search-media.html" class="header-btn">Search media ➡</a>
+        <a href="#" class="header-btn hidden">Search media ➡</a>
       </div>
     </div>
     <div class="search-form">
-      <input type="text" placeholder="Search here..." class="search-input" />
-      <select name="media" id="">
+      <input type="text" placeholder="Search here..." class="search-input" required />
+      <select name="media" id="" required>
         <option value="" selected>Media type</option>
         <option value="image">Image</option>
         <option value="audio">Audio</option>
-        <option value="">Any</option>
+        <option value="video">Video</option>
+        <option value="">All</option>
       </select>
       <button class="search-btn">Search</button>
     </div>
-    <!-- <div class="search-results">
-      <div class="result-card">
+    <div class="search-results hidden">
+      <!-- <div class="result-card">
         <div class="result-image">
           <img
             src="https://images-assets.nasa.gov/image/jsc2007e034221/jsc2007e034221~thumb.jpg"
@@ -79,7 +81,7 @@
           </p>
           <p class="result-date">Date Created: 1969-07-11</p>
         </div>
-      </div>
-    </div> -->
+      </div> -->
+    </div>
   </body>
 </html>
