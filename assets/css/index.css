@@ -3,3 +3,35 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+}
+
+.background-image img {
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  z-index: -1;
+
+  filter: brightness(0.75) contrast(1.2);
+}
+.header-btn {
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem 2.4rem;
+  margin-top: 2.4rem;
+  margin-right: 2.4rem;
+  background-color: rgb(185, 5, 185);
+  text-decoration: none;
+  align-items: flex-end;
+  width: 12.2rem;
+  color: white;
+  font-weight: 600;
+  float: right;
+  border-radius: 10px;
+}
