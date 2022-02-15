@@ -36,6 +36,14 @@
   border-radius: 10px;
 }
 
+.links {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
 .search-form {
   display: flex;
   flex-direction: column;
@@ -45,9 +53,12 @@
   align-content: center;
   position: absolute;
   gap: 1.2rem;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #aaa;
+  padding: 8.2rem 0;
+  border-radius: 10px;
 }
 
 .search-input {
@@ -80,4 +91,58 @@
   font-weight: 600;
   border-radius: 10px;
   margin-top: 3.2rem;
+}
+
+.search-results {
+  width: 80%;
+  padding: 1.2rem 2.4rem;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  border-radius: 5px;
+}
+
+.result-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1.2rem 2.4rem;
+  height: 12.4rem;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.result-image {
+  width: 50%;
+  align-self: flex-start;
+}
+
+.result-image img {
+  width: 8.2rem;
+}
+
+.result-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.result-title {
+  font-size: 1.8rem;
+  color: blueviolet;
+}
+
+.result-description {
+  font-size: 1.1rem;
+  color: black;
+  line-height: 1.6;
+}
+
+.result-date {
+  font-size: 1.1rem;
+  color: #aaa;
 }
