@@ -15,7 +15,7 @@
 .background-image img {
   width: 100%;
   position: absolute;
-  height: 110vh;
+  height: 120vh;
   z-index: -1;
 
   filter: brightness(0.75) contrast(1.2);
@@ -42,6 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5.8rem;
 }
 
 .logo {
@@ -56,6 +57,7 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 10.2rem;
 }
 .apod-date-input {
   border: 2px solid rgb(185, 5, 185);
@@ -138,41 +140,41 @@ form {
     transform: scale(1);
   }
 }
-.meteors img:nth-child(1){
+.meteors img:nth-child(1) {
   animation-delay: 1s;
   grid-column: 1/9;
 }
-.meteors img:nth-child(2){
-  animation-delay: .5s;
+.meteors img:nth-child(2) {
+  animation-delay: 0.5s;
   grid-column: 3/9;
 }
-.meteors img:nth-child(3){
+.meteors img:nth-child(3) {
   animation-delay: 4s;
   grid-column: 8/9;
 }
-.meteors img:nth-child(4){
+.meteors img:nth-child(4) {
   animation-delay: 2.5s;
   grid-column: 6/9;
 }
-.meteors img:nth-child(5){
+.meteors img:nth-child(5) {
   animation-delay: 3.5s;
   grid-column: 4/9;
 }
-.meteors img:nth-child(6){
+.meteors img:nth-child(6) {
   animation-delay: 4.5s;
   grid-column: 2/9;
 }
-.meteors img:nth-child(7){
+.meteors img:nth-child(7) {
   animation-delay: 3s;
   grid-column: 5/9;
 }
-.meteors img:nth-child(8){
+.meteors img:nth-child(8) {
   animation-delay: 2s;
   grid-column: 7/9;
 }
 
 @media screen and (max-width: 1024px) {
-  html{
+  html {
     font-size: 90%;
   }
   .detail-box {
@@ -191,15 +193,15 @@ form {
 
 @media screen and (max-width: 769px) {
   html {
-    font-size: 70%;
+    font-size: 62.5%;
   }
 }
 
 @media screen and (max-width: 600px) {
   html {
-    font-size: 65%;
+    font-size: 50%;
   }
-  .input{
+  .input {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,5 +209,15 @@ form {
   }
   .detail-box {
     margin-left: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 33%;
+  }
+
+  .apod-title {
+    font-size: 0.8rem;
   }
 }
