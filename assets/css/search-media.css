@@ -207,6 +207,62 @@ body {
   display: none;
 }
 
+.meteors img {
+  width: 50px;
+  animation: meteors 7s linear infinite;
+}
+.meteors {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+}
+@keyframes meteors {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.meteors img:nth-child(1) {
+  animation-delay: 1s;
+  grid-column: 1/9;
+}
+.meteors img:nth-child(2) {
+  animation-delay: 0.5s;
+  grid-column: 3/9;
+}
+.meteors img:nth-child(3) {
+  animation-delay: 4s;
+  grid-column: 8/9;
+}
+.meteors img:nth-child(4) {
+  animation-delay: 2.5s;
+  grid-column: 6/9;
+}
+.meteors img:nth-child(5) {
+  animation-delay: 3.5s;
+  grid-column: 4/9;
+}
+.meteors img:nth-child(6) {
+  animation-delay: 4.5s;
+  grid-column: 2/9;
+}
+.meteors img:nth-child(7) {
+  animation-delay: 3s;
+  grid-column: 5/9;
+}
+.meteors img:nth-child(8) {
+  animation-delay: 2s;
+  grid-column: 7/9;
+}
+
 @media screen and (max-width: 769px) {
   html {
     font-size: 62.5%;
