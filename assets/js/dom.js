@@ -128,6 +128,9 @@ const fetch = (method, url, cb) => {
 
 if (dateSearch) {
   dateSearch.addEventListener('click', () => {
+    if(detailBox.style.visibility = "hidden"){
+      detailBox.style.visibility = "visible";
+    }
     const url = `${pictureAPI}${date.value}`;
     fetch('GET', url, handleDom);
   });
