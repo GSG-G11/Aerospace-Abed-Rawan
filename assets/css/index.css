@@ -39,7 +39,6 @@
 .logo-img {
   width: 50%;
   height: 10rem;
-  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +53,6 @@ form {
   margin: auto;
   padding: 3.2rem 2.4rem 1.4rem;
   display: flex;
-  margin-left: 10.2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -67,7 +65,7 @@ form {
   padding: 1.2rem 2.4rem;
   transition: all 0.3s ease;
   width: 25.2rem;
-  margin-right: 3.4rem;
+  margin-right: 1.4rem;
 }
 .apod-search-btn {
   border: 0em;
@@ -87,7 +85,7 @@ form {
 .detail-box {
   display: flex;
   justify-content: center;
-  width: 87%;
+  width: 85%;
   align-items: center;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 25px;
@@ -171,4 +169,43 @@ form {
 .meteors img:nth-child(8){
   animation-delay: 2s;
   grid-column: 7/9;
+}
+
+@media screen and (max-width: 1024px) {
+  html{
+    font-size: 90%;
+  }
+  .detail-box {
+    flex-direction: column;
+    margin-left: 4.5rem;
+  }
+  .apod-date-input {
+    width: 23rem;
+    align-items: center;
+  }
+  .apod-search-btn {
+    align-items: center;
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 65%;
+  }
+  .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .detail-box {
+    margin-left: 3.5rem;
+  }
 }
