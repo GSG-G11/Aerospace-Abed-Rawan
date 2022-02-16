@@ -22,3 +22,11 @@ One of the most beautiful NASA websites is NASA Image and Video Library.This API
 * You can enter what you are looking for in the form and choose the type of media.
 * You can see the media you are looking for.
 
+# :link: Live Website 
+
+You are welcome to visit our website [Here. ](https://gsg-g11.github.io/Aerospace-Abed-Rawan/)
+
+# :busts_in_silhouette: Team 
+
+* :bearded_person: Abedalrahman Shamia.
+* :person_with_headscarf: Rawan Al-Gharabli.
