@@ -15,7 +15,7 @@
 .background-image img {
   width: 100%;
   position: absolute;
-  height: 100vh;
+  height: 110vh;
   z-index: -1;
 
   filter: brightness(0.75) contrast(1.2);
@@ -35,12 +35,31 @@
   float: right;
   border-radius: 10px;
 }
-form{
-  width: 80%;
-  padding:6.5rem 2.4rem 1.4rem;
-  margin-left: 15.5rem;
+
+.logo-img {
+  width: 50%;
+  height: 10rem;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.apod-date-input{
+
+.logo {
+  max-width: 100%;
+  width: fit-content;
+}
+form {
+  width: 80%;
+  margin: auto;
+  padding: 3.2rem 2.4rem 1.4rem;
+  display: flex;
+  margin-left: 10.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.apod-date-input {
   border: 2px solid rgb(185, 5, 185);
   background: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
@@ -50,7 +69,7 @@ form{
   width: 25.2rem;
   margin-right: 3.4rem;
 }
-.apod-search-btn{
+.apod-search-btn {
   border: 0em;
   justify-content: center;
   padding: 1.2rem 2.4rem;
@@ -63,8 +82,9 @@ form{
   color: white;
   font-weight: 600;
   border-radius: 10px;
+  cursor: pointer;
 }
-.detail-box{
+.detail-box {
   display: flex;
   justify-content: center;
   width: 87%;
@@ -74,28 +94,29 @@ form{
   padding: 1.2rem 1.4rem;
   margin-left: 5.5rem;
 }
-.detail-box .image-box{
+.detail-box .image-box {
   height: 100%;
   width: 30%;
 }
-.detail-box .image-box img{
+.detail-box .image-box img {
   width: 100%;
   object-fit: contain;
   border-radius: 10px;
 }
-.detail-box .detail-box-text{
+.detail-box .detail-box-text {
   width: 70%;
 }
-.detail-box .detail-box-text .apod-title{
+.detail-box .detail-box-text .apod-title {
   font-size: 35px;
   font-weight: 600;
   color: rgb(185, 5, 185);
   padding: 0rem 1.4rem 1.2rem;
 }
-.detail-box-text p{
+.detail-box-text p {
   font-weight: 600;
   padding: 0rem 1.4rem;
 }
+
 .meteors img {
   width: 50px;
   animation: meteors 7s linear infinite;
