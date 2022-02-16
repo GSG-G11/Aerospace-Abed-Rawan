@@ -8,7 +8,7 @@
 A nice site to display NASA photos of special days for you, for example, a photo taken on your birthday. It also displays images, videos, and sounds from NASA's Photo and Video Library.
 ## :waning_crescent_moon: API 
 
-### :frame_with_picture: APOD 
+### :satellite: APOD 
 One of the most popular websites at NASA is the Astronomy Picture of the Day. This endpoint structures the APOD imagery and associated metadata so that it can be repurposed for other applications.
 
 ### :video_camera: NASA Image and Video Library 
@@ -28,5 +28,5 @@ You are welcome to visit our website [Here. ](https://gsg-g11.github.io/Aerospac
 
 # :busts_in_silhouette: Team 
 
-* :bearded_person: Abedalrahman Shamia.
-* :person_with_headscarf: Rawan Al-Gharabli.
+* Abedalrahman Shamia.
+* Rawan Al-Gharabli.
