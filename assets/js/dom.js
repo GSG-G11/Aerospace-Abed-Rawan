@@ -14,6 +14,7 @@ const apodDetail = document.querySelector('#apod-detail');
 const pictureAPI = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=';
 const detailBox = document.querySelector('.detail-box');
 
+//Get Media Search Data
 function getData(method, url) {
   const xhrRequest = new XMLHttpRequest();
 
@@ -28,11 +29,20 @@ function getData(method, url) {
   xhrRequest.send();
 }
 
+//Handle Search button in Search media page
+
 if (searchButton) {
   searchButton.addEventListener('click', function (event) {
     event.preventDefault();
     const media = selectInput.value;
     const searchTerm = searchInput.value;
+
+    if (searchTerm.trim() === '') {
+      searchInput.classList.add('error');
+      return;
+    }
+
+    searchInput.classList.remove('error');
 
     media === ''
       ? getData('GET', `${API_URL}q=${searchTerm}`)
@@ -41,6 +51,8 @@ if (searchButton) {
     searchForm.classList.add('hideVisibility');
   });
 }
+
+//Handle DOM in Search Media page
 
 function searchMediaDomHandler(data) {
   searchResults.innerHTML = '';
@@ -51,6 +63,7 @@ function searchMediaDomHandler(data) {
   if (items.length === 0) {
     searchResults.innerHTML = '<h2>No results found</h2>';
   }
+
   items.forEach(item => {
     const resultCard = document.createElement('div');
     resultCard.classList.add('result-card');
@@ -99,6 +112,8 @@ function searchMediaDomHandler(data) {
   });
 }
 
+//Toggle header button visibility
+
 if (headerBtn) {
   headerBtn.addEventListener('click', function () {
     searchForm.classList.remove('hideVisibility');
@@ -107,11 +122,17 @@ if (headerBtn) {
   });
 }
 
+//Index Page
+
+//Handle DOM of received data
+
 const handleDom = data => {
   apodImg.src = data.url;
   apodTitle.textContent = data.title;
   apodDetail.textContent = data.explanation;
 };
+
+//GET data from the API
 
 const fetch = (method, url, cb) => {
   const xhr = new XMLHttpRequest();
@@ -126,10 +147,13 @@ const fetch = (method, url, cb) => {
   xhr.send();
 };
 
+//Toggle detailbox visibility
+
 if (dateSearch) {
-  dateSearch.addEventListener('click', () => {
-    if(detailBox.style.visibility = "hidden"){
-      detailBox.style.visibility = "visible";
+  dateSearch.addEventListener('click', e => {
+    e.preventDefault();
+    if ((detailBox.style.visibility = 'hidden')) {
+      detailBox.style.visibility = 'visible';
     }
     const url = `${pictureAPI}${date.value}`;
     fetch('GET', url, handleDom);
