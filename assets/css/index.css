@@ -14,7 +14,7 @@
 
 .background-image img {
   width: 100%;
-  position: absolute;
+  position: fixed;
   height: 120vh;
   z-index: -1;
 

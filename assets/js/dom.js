@@ -14,6 +14,8 @@ const apodDetail = document.querySelector('#apod-detail');
 const pictureAPI = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=';
 const detailBox = document.querySelector('.detail-box');
 
+
+//Get Media Search Data
 function getData(method, url) {
   const xhrRequest = new XMLHttpRequest();
 
@@ -28,6 +30,9 @@ function getData(method, url) {
   xhrRequest.send();
 }
 
+
+//Handle Search button in Search media page
+
 if (searchButton) {
   searchButton.addEventListener('click', function (event) {
     event.preventDefault();
@@ -41,6 +46,9 @@ if (searchButton) {
     searchForm.classList.add('hideVisibility');
   });
 }
+
+
+//Handle DOM in Search Media page
 
 function searchMediaDomHandler(data) {
   searchResults.innerHTML = '';
@@ -99,6 +107,9 @@ function searchMediaDomHandler(data) {
   });
 }
 
+
+//Toggle header button visibility
+
 if (headerBtn) {
   headerBtn.addEventListener('click', function () {
     searchForm.classList.remove('hideVisibility');
@@ -107,11 +118,18 @@ if (headerBtn) {
   });
 }
 
+
+//Index Page
+
+//Handle DOM of received data
+
 const handleDom = data => {
   apodImg.src = data.url;
   apodTitle.textContent = data.title;
   apodDetail.textContent = data.explanation;
 };
+
+//GET data from the API
 
 const fetch = (method, url, cb) => {
   const xhr = new XMLHttpRequest();
@@ -126,8 +144,11 @@ const fetch = (method, url, cb) => {
   xhr.send();
 };
 
+//Toggle detailbox visibility
+
 if (dateSearch) {
-  dateSearch.addEventListener('click', () => {
+  dateSearch.addEventListener('click', (e) => {
+    e.preventDefault();
     if(detailBox.style.visibility = "hidden"){
       detailBox.style.visibility = "visible";
     }
