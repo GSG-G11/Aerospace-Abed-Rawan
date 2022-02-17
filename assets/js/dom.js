@@ -5,13 +5,13 @@ const searchButton = document.querySelector('.search-btn');
 const searchResults = document.querySelector('.search-results');
 const headerBtn = document.querySelectorAll('.header-btn')[1];
 const API_URL = 'https://images-api.nasa.gov/search?page=1&';
-
+const API_KEY = 'AnBxpdITZxkdOIkIcYiauMKxcIE19XSeuChVk6FD';
 const date = document.querySelector('#apod-date-input');
 const dateSearch = document.querySelector('#apod-search-btn');
 const apodImg = document.querySelector('#apod-img');
 const apodTitle = document.querySelector('#apod-title');
 const apodDetail = document.querySelector('#apod-detail');
-const pictureAPI = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=';
+const pictureAPI = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=`;
 const detailBox = document.querySelector('.detail-box');
 
 //Get Media Search Data
