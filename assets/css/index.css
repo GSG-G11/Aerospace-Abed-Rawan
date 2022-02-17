@@ -36,6 +36,10 @@
   border-radius: 10px;
 }
 
+.header-btn:hover {
+  background-color: rgb(185, 5, 185, 0.8);
+}
+
 .logo-img {
   width: 50%;
   height: 10rem;
@@ -83,7 +87,13 @@ form {
   font-weight: 600;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
+
+.apod-search-btn:hover {
+  background-color: rgb(185, 5, 185, 0.8);
+}
+
 .detail-box {
   display: flex;
   justify-content: center;

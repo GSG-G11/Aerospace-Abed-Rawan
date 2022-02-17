@@ -49,6 +49,14 @@ body {
   justify-content: flex-end;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
 .search-form {
   display: flex;
   flex-direction: column;
@@ -96,6 +104,7 @@ body {
   border-radius: 7px;
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
+  cursor: pointer;
 }
 
 .search-form select option {
@@ -133,6 +142,14 @@ body {
   gap: 2.4rem;
   border-radius: 5px;
   backdrop-filter: blur(2px);
+}
+
+.error {
+  color: red;
+  border: red 1px solid;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
 }
 
 .result-card {
